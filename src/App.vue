@@ -2,7 +2,7 @@
   <div>
     <!-- creando input con variable en el estado tarea-->
     <input class="input" v-model="tarea" type="text" placeholder="Ingresa nueva tarea">
-    <!-- Boton para que agregue tarea el cual tiene un evento click que ejecute método agregar -->
+    <!-- Boton para que agregue tarea el cual tiene un evento click que ejecute método agregar-->
     <button class="boton" @click="add" >Agregar tarea </button>
     <tarea v-for="(tarea, i) in tareas" :tarea="tarea" :indice="i" :key="i" @eliminar="eliminarTarea"></tarea>
   </div>
